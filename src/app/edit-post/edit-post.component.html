@@ -1,0 +1,27 @@
+<div class="col-sm-6 mx-auto"> 
+    <div class="outer_container">
+      <div class="container" align="center">
+          <h3>Edit your Blog here...</h3>
+      </div>
+  
+      <form class="container" [formGroup]="editBlog">
+          <div class="form-group">
+            <label for="title">Blog Title</label>
+            <input type="text" class="form-control" id="title" placeholder="" formControlName="title" />
+          </div>
+  
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" class="form-control" id="author" placeholder="" formControlName="blog_author" />
+          </div>
+          
+          <div class="form-group">
+              <label for="content">Content</label>
+              <textarea type="textarea" rows="4" class="form-control" id="content" placeholder="" formControlName="description" ></textarea>
+            </div>
+  
+          <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+  </div>
+  

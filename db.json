@@ -1,0 +1,10 @@
+{
+  "blogs": [
+    {
+      "id": "cb48eb5b-1998-4aaa-91c1-db7aee926a66",
+      "title": "This is the first Blog",
+      "author": "Naincy",
+      "content": "This is the content."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<div id="outerdiv" class="col-sm-6 mx-auto container my-3 align-items-center">
+    <div *ngIf="items?.length != 0">
+        <h3>Recent Blogs Here...</h3>
+    </div>
+    <div *ngFor="let item of items" class="card mb-3 bg-warning p-3">
+        <p class="font-weight-bold">{{ item.title }}</p>
+        <p>{{ item.blog_author }}</p>
+        <p>{{ item.description | slice: 0:10 }}<span><a [routerLink]="['blogs', item.id]">...more</a></span></p>
+        <br />
+    </div>
+
+    <div class="card mb-3 bg-warning p-3 text-center" *ngIf="items?.length==0">
+        <h3>No Blogs found here...</h3>
+    </div>
+</div>

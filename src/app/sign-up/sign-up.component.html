@@ -1,0 +1,27 @@
+<div class="col-sm-6 mx-auto">
+  <div class="outer_container">
+    <div class="container" align="center">
+      <h3>SignUp here...</h3>
+    </div>
+
+    <form class="container" [formGroup]="userForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Please enter full Name"
+          formControlName="name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email" placeholder="Please enter Email">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Please enter Password" formControlName="password">
+      </div>
+
+      <button type="submit" (click)="submitForm()" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
